@@ -3,42 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INFSCI 0410 Website</title>
+    <title>UPMC Health Plan</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
             margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            background-color: purple;
+            color: white;
         }
+
         header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1rem;
-        }
-        main {
+            background-color: #003366;
             padding: 20px;
-            background-color: #fff;
-            margin-top: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        .sidebar {
+            width: 300px;
+            padding: 20px;
+            background-color: #003366;
+            float: left;
+        }
+
+        .sidebar a {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            background-color: #333333;
+        }
+
+        .sidebar a:hover {
+            background-color: #444444;
+        }
+
+        .sidebar a span {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: red; /* Placeholder for circular icons */
+        }
+
+        .content {
+            margin-left: 320px; /* Adjust to match sidebar width */
+            padding: 20px;
+        }
+
+        .progress {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            background-color: orange;
+            padding: 10px 20px;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to INFSCI 0410</h1>
+        <h1>Welcome to UPMC Health Plan!</h1>
     </header>
-    <main>
-        <h2>About This Course</h2>
-        <p>This is a placeholder for information about INFSCI 0410. You can add course details, objectives, or any other relevant information here.</p>
-        <h2>Topics Covered</h2>
-        <ul>
-            <li>Topic 1</li>
-            <li>Topic 2</li>
-            <li>Topic 3</li>
-        </ul>
-    </main>
+
+    <div class="sidebar">
+        <a href="#"><span></span> About You</a>
+        <a href="#"><span></span> Terminology</a>
+        <a href="#"><span></span> Coverage</a>
+        <a href="#"><span></span> Options</a>
+        <a href="#"><span></span> Pricing</a>
+        <a href="#"><span></span> Vision</a>
+        <a href="#"><span></span> Dental</a>
+    </div>
+
+    <div class="content">
+        <!-- Add main content here -->
+    </div>
+
+    <div class="progress">
+        3.2% Complete
+    </div>
 </body>
 </html>
+
 
