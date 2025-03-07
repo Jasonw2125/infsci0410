@@ -5,29 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UPMC Health Plan</title>
     <style>
+        /* General Styles */
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background-color: purple;
+            background-color: purple; /* Matches the background color in the image */
             color: white;
         }
 
+        /* Header Styles */
         header {
-            background-color: #003366;
+            background-color: #003366; /* Dark blue header */
             padding: 20px;
             text-align: center;
+            border-radius: 10px 10px 0 0; /* Rounded corners for the header */
         }
 
         header h1 {
             margin: 0;
-            font-size: 2em;
+            font-size: 2.5em;
         }
 
+        /* Sidebar Styles */
         .sidebar {
             width: 300px;
             padding: 20px;
-            background-color: #003366;
+            background-color: #003366; /* Dark blue sidebar */
             float: left;
+            border-radius: 10px; /* Rounded corners for the sidebar */
         }
 
         .sidebar a {
@@ -38,12 +43,13 @@
             text-decoration: none;
             padding: 10px 20px;
             margin-bottom: 10px;
-            border-radius: 5px;
-            background-color: #333333;
+            border-radius: 5px; /* Rounded buttons */
+            background-color: #333399; /* Lighter blue for buttons */
+            font-size: 1.2em; /* Slightly larger font size */
         }
 
         .sidebar a:hover {
-            background-color: #444444;
+            background-color: #4444aa; /* Hover effect for buttons */
         }
 
         .sidebar a span {
@@ -52,28 +58,52 @@
             height: 30px;
             border-radius: 50%;
             background-color: red; /* Placeholder for circular icons */
+            border: 2px solid white; /* White border around icons */
         }
 
+        .sidebar a:first-child span {
+            background-image: conic-gradient(green, yellow, red); /* Matches the multi-colored icon in "About You" */
+        }
+
+        /* Content Styles */
         .content {
-            margin-left: 320px; /* Adjust to match sidebar width */
+            margin-left: 320px; /* Leaves space for the sidebar */
             padding: 20px;
         }
 
+        .content p {
+            font-size: 1.5em;
+        }
+
+        .content a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .content a:hover {
+            text-decoration: underline;
+        }
+
+        /* Progress Bar Styles */
         .progress {
             position: absolute;
             bottom: 20px;
             right: 20px;
-            background-color: orange;
+            background-color: orange; /* Matches the orange progress bar in the image */
             padding: 10px 20px;
-            border-radius: 5px;
+            border-radius: 10px; /* Rounded corners for progress bar */
+            font-size: 1.2em; /* Larger font size for progress text */
+            font-weight: bold; /* Bold text for emphasis */
         }
     </style>
 </head>
 <body>
+    <!-- Header Section -->
     <header>
         <h1>Welcome to UPMC Health Plan!</h1>
     </header>
 
+    <!-- Sidebar Section -->
     <div class="sidebar">
         <a href="#"><span></span> About You</a>
         <a href="#"><span></span> Terminology</a>
@@ -84,14 +114,14 @@
         <a href="#"><span></span> Dental</a>
     </div>
 
+    <!-- Main Content Section -->
     <div class="content">
-        <!-- Add main content here -->
+        <p><a href="#">← Start Here</a></p>
     </div>
 
+    <!-- Progress Bar -->
     <div class="progress">
         3.2% Complete
     </div>
 </body>
 </html>
-
-
